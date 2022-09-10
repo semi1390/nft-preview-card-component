@@ -1,0 +1,127 @@
+*{
+    margin:0px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.attribution { font-size: 16px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    padding: 1.25rem;
+    font-family: 'Outfit' , 'sans-serif';
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    
+}
+.card-img-holder{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    background-color: hsl(178, 100%, 50% , 60%);
+    top: 0;
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.overlay img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.card-title{
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    margin: 1rem 0.5rem 0.5rem 0;
+}
+.card-text{
+    color: hsl(215, 51%, 70%);
+}
+.card-body{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    justify-content: space-between;
+}
+
+.card-body-eth{
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+}
+.card-body-eth img{
+    margin-right: 0.3rem;
+}
+.card-body-days{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+}
+.card-body-days img{
+    margin-right: 0.3rem;
+}
+
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 2rem;
+}
+.card-footer-img{
+    width: 3.5rem;
+    margin-right: 1rem;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.card-footer-text{
+    color:hsl(0, 0%, 100%) ;
+    font-weight: 400;
+    text-align: center;
+}
+span{
+    color: hsl(215, 51%, 70%);
+}
+
+/* //hover effect */
+.card-footer-text:hover{
+color: hsl(178, 100%, 50%);
+cursor: pointer;
+}
+h2:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.card-img:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 500px){
+    .card{
+        width: 450px;
+        margin: 0 auto 1rem;
+    }
+
+}
